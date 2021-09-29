@@ -1,0 +1,48 @@
+.wrapper {
+    height: 97vh;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas:
+      "f1 f2";
+  }
+
+  .factura1 {
+    display: grid;
+    grid-area: f1;
+    align-self: center;
+    border: 1px solid #000;
+    justify-self: center;
+    grid-template-areas:
+      "header-f"
+      "body-f table-f" ;
+  }
+
+  .factura2 {
+    grid-area: f2;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+  }
+
+@page {
+    size: A4 landscape; 
+}
+
+
+.infoEmpresa-f{
+
+    grid-area: header-f;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.infoCliente-f{
+    grid-area: header-f;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+}

@@ -1,0 +1,101 @@
+@page {
+    size: A4 landscape; 
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+
+.wrapper {
+    height: 97vh;
+/*     border: 1px solid #000; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "f1 f2";
+  }
+
+  .factura1 {
+    
+    display: grid;
+    grid-area: f1;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "infoEmpresa-f fecha-f"
+      "infoCliente-f infoCliente-f"
+      "items-f items-f"
+  }
+
+  .factura2 {
+    
+    display: grid;
+    grid-area: f2;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "infoEmpresa-f fecha-f"
+      "infoCliente-f infoCliente-f"
+      "items-f items-f"
+  }
+
+
+.infoEmpresa-f{
+    grid-area: infoEmpresa-f;
+/*     border: 1px solid #000; */
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fecha-f{
+    grid-area: fecha-f;
+/*     border: 1px solid #000; */
+    align-self: center;
+/*     justify-self: center; */
+    text-align: center;
+    padding-right: 20px;
+}
+
+.infoCliente-f{
+    padding-left: 10px;
+    grid-area: infoCliente-f;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: ;
+
+}
+
+.items-f{
+    grid-area: items-f;
+/*     border: 1px solid #000; */
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+  }

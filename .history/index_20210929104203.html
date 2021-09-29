@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+   <!--  <div class="wrapper">
+        
+        <div class="factura1">
+                <div class="infoEmpresa-f">
+                    Empresa: Villa Jacob
+                    <br>
+                    NIT: 8000000 
+                    <br>
+                    Direccion: jajjdajdj
+                </div>
+                <div class="infoCliente-f">
+                    Cliente: Jacobo
+                    <br>
+                    CC: 1116283283
+                    <br>
+                    Direccion: jajjdajdj
+                </div>
+
+
+                    <div class="items-f row my-5">
+                        <table class="factura">
+                          <thead>
+                            <tr>
+                              <th>Cant.</th>
+                              <th>Descripcion</th>
+                              <th>Precio Unitario</th>
+                              <th>Importe</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Clases de Cha-Cha-Cha</td>
+                              <td>3,000.00</td>
+                              <td>3,000.00</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Clases de Salsa</td>
+                              <td>4,000.00</td>
+                              <td>12,000.00</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Clases de Salsa</td>
+                              <td>4,000.00</td>
+                              <td>12,000.00</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Clases de Salsa</td>
+                              <td>4,000.00</td>
+                              <td>12,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Clases de Salsa</td>
+                                <td>4,000.00</td>
+                                <td>12,000.00</td>
+                              </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th></th>
+                              <th></th>
+                              <th>Total Factura</th>
+                              <th>RD$15,000.00</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <div class="cond row"></div>
+                      </div>
+
+        </div>
+
+    </div> -->
+
+
+    @page {
+        bleed: 1cm;
+        size: A4 portrait;
+            size:  auto;   /* auto is the initial value */
+            margin-left: 0mm;  /* this affects the margin in the printer settings */
+            margin-bottom: 0mm;
+            margin-top: 0mm;
+      
+        html
+        {
+            background-color: #FFFFFF;
+            margin: 0px;  /* this affects the margin on the html before sending to printer */
+        }
+      
+        body
+        {
+            border: solid 1px blue ;
+            margin: 10mm 15mm 10mm 15mm; /* margin you want for the content */
+        }
+      }
+      
+      @media print {
+        .page {
+          margin: 0;
+          border: initial;
+          border-radius: initial;
+          width: initial;
+          min-height: initial;
+          box-shadow: initial;
+          background: initial;
+          page-break-after: always;
+        }
+      }
+      
+      body{
+        background-color: #eee;
+        -webkit-print-color-adjust: exact !important;
+      }
+      
+      img.logo{
+        margin-right: 50px;
+      }
+      
+      .container{
+        background-color: #e3e3e3;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+      /*   box-shadow: 0 10px 10px #999; */
+      }
+      
+      div.header{
+        position: relative;
+      }
+      
+      .arrow-right {
+        width: 0; 
+        height: 0; 
+        border-top: 60px solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 60px solid white;
+        z-index: 3;
+        position: absolute;
+        left: 735px;
+        top: 75px;
+      }
+      
+      h1.title{
+        display: inline-block;
+        z-index: 1;
+        color: #333;
+        font-size: 72px;
+        position: absolute;
+        top: 50px;
+        left: 40px;
+      }
+      
+      div.header::after{
+        background-color: white;
+        height: 50px;
+        width: 120px;
+      }
+      
+      div.shape{
+        width: 60%;
+        height: 150px;
+        background-color: white;
+        position: absolute;
+        top: 50px;
+      }
+      
+      div.shape::after{
+        content: "";
+        visibility: visible;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        position: absolute;
+        right: -70px;
+        border-radius: 100%;
+      }
+      
+      div.shape::before{
+        content: "";
+        visibility: visible;
+        width: 125px;
+        height: 125px;
+        background-color: #e3e3e3;
+        position: absolute;
+        right: -210px;
+        top: -28px;
+        border-radius: 100%;
+        z-index: 0;
+      }
+      
+      div.rectangle{
+        position: absolute;
+        height: 100px;
+        width: 150px;
+        right: 310px;
+        top: 120px;
+        background-color: white;
+        z-index: 0;
+      }
+      
+      div.invoice-content{
+        background-color: white;
+        margin-top: -2px;
+        z-index: 3;
+        border-bottom: 5px solid #0079C2;
+        padding-bottom: 15px;
+      }
+      
+      div.invoiced-to {
+        color: #333;
+      }
+      
+      div.invoiced-details{
+        background-color: #efefef;
+      }
+      
+      table > thead.thead-blue{
+        background-color: #0079C2;
+        color: white;
+      }
+      
+      div.background{
+        background-color: white;
+      }
+      
+      tr.last-row{
+        border-bottom: 3px solid #333;
+      }
+      
+      td.total{
+        width: 200px;
+      }
+      
+      td.total-value{
+        width: 100px;
+      }
+      
+      td.total, td.total-value{
+        background-color: #0079C2;
+        color: white;
+      }
+      
+      td.empty{
+        visibility: hidden;
+      }
+      
+      .color{
+        color: #0079C2;
+      }
+      
+      td.total-value{
+        width: auto;
+      }
+
+       
+      
+        
+          
+
+
+
+    </div>
+
+</body>
+</html>
+

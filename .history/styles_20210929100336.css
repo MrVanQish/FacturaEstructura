@@ -1,0 +1,53 @@
+@page {
+    size: A4 landscape; 
+}
+
+.wrapper {
+    height: 97vh;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas:
+      "f1 f2";
+  }
+
+  .factura1 {
+    
+    display: grid;
+    grid-area: f1;
+    align-self: center;
+    border: 1px solid #000;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "infoEmpresa-f infoEmpresa-f"
+      "infoCliente-f items-f" ;
+  }
+
+
+.infoEmpresa-f{
+
+    grid-area: infoEmpresa-f;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.infoCliente-f{
+    grid-area: infoCliente-f;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+}
+
+.items-f{
+    grid-area: items-f;
+    border: 1px solid #000;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+border-width: 100px;
+}

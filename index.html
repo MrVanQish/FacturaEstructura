@@ -1,220 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="printStyles.css"
+      media="print"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        
-        <div class="factura1">
-                <div class="infoEmpresa-f">
-                    Empresa: Villa Jacob
-                    <br>
-                    NIT: 8000000 
-                    <br>
-                    Direccion: jajjdajdj
-                </div>
-
-                <div class="fecha-f">
-                    <table>
-                        <tr>
-                            <th>
-                                DIA
-                            </th>
-                            <th>
-                                MES
-                            </th>
-                            <th>
-                                AÑO
-                            </th>
-                        </tr>
-                        <tr>
-                          <td>‏‏‎‎‎‎29</td>
-                          <td>‏‏‎09</td>
-                          <td>‏‏‎‎2021‎</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="infoCliente-f">
-                  <h6>CLIENTE: </h6>
-                  <h6>DIRECCION:</h6>
-                  <h6>NIT/CC:</h6>
-                  <h6>DIRECCION:</h6>
-                  <h6>TEL:</h6>
-                </div>
-
-
-                    <div class="items-f row my-5">
-                        <table class="table table-borderless factura">
-                          <thead>
-                            <tr>
-                              <th>Cant.</th>
-                              <th>Descripcion</th>
-                              <th>Precio Unitario</th>
-                              <th>Importe</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Clases de Cha-Cha-Cha</td>
-                              <td>3,000.00</td>
-                              <td>3,000.00</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Clases de Salsa</td>
-                              <td>4,000.00</td>
-                              <td>12,000.00</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Clases de Salsa</td>
-                              <td>4,000.00</td>
-                              <td>12,000.00</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Clases de Salsa</td>
-                              <td>4,000.00</td>
-                              <td>12,000.00</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Clases de Salsa</td>
-                                <td>4,000.00</td>
-                                <td>12,000.00</td>
-                              </tr>
-                            
-                          </tbody>
-                          <tfoot>
-                            <tr>
-                              <th></th>
-                              <th></th>
-                              <th>Total Factura</th>
-                              <th>$15,000.00</th>
-                            </tr>
-                          </tfoot>
-                        </table>
-                        <div class="cond row"></div>
-                      </div>
-
+      <div class="factura1">
+        <div class="infoEmpresa-f">
+          <img src="assets/logo.jpg" alt="" />
+          <br />
+          Alfombras el limpio
+          <br />
+          NIT: 8000000
+          <br />
+          Dirección: Cra 32 #12-31
         </div>
 
-        <div class="factura2">
-          <div class="infoEmpresa-f">
-              Empresa: Villa Jacob
-              <br>
-              NIT: 8000000 
-              <br>
-              Direccion: jajjdajdj
-          </div>
-
-          <div class="fecha-f">
-            <table>
-              <tr>
-                  <th>
-                      DIA
-                  </th>
-                  <th>
-                      MES
-                  </th>
-                  <th>
-                      AÑO
-                  </th>
-              </tr>
-              <tr>
-                <td>‏‏‎‎‎‎29</td>
-                <td>‏‏‎09</td>
-                <td>‏‏‎‎2021‎</td>
-              </tr>
+        <div class="fecha-f">
+          <table>
+            <tr>
+              <th>Día</th>
+              <th>Mes</th>
+              <th>Año</th>
+            </tr>
+            <tr>
+              <td>‏‏‎‎‎‎29</td>
+              <td>‏‏‎09</td>
+              <td>‏‏‎‎2021‎</td>
+            </tr>
           </table>
-          </div>
-          <div class="infoCliente-f">
-            <h6>CLIENTE: </h6>
-            <h6>DIRECCION:</h6>
-            <h6>NIT/CC:</h6>
-            <h6>DIRECCION:</h6>
-            <h6>TEL:</h6>
-          </div>
+        </div>
 
+        <div class="infoCliente-f">
+          <h6>Cliente:</h6>
+          <h6>Dirección:</h6>
+          <h6>Nit/cc:</h6>
+          <h6>Cel:</h6>
+        </div>
 
-              <div class="items-f row my-5">
-                  <table class="table table-borderless factura">
-                    <thead>
-                      <tr>
-                        <th>Cant.</th>
-                        <th>Descripcion</th>
-                        <th>Precio Unitario</th>
-                        <th>Importe</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Clases de Cha-Cha-Cha</td>
-                        <td>3,000.00</td>
-                        <td>3,000.00</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Clases de Salsa</td>
-                        <td>4,000.00</td>
-                        <td>12,000.00</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Clases de Salsa</td>
-                        <td>4,000.00</td>
-                        <td>12,000.00</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Clases de Salsa</td>
-                        <td>4,000.00</td>
-                        <td>12,000.00</td>
-                      </tr>
-                      <tr>
-                          <td>3</td>
-                          <td>Clases de Salsa</td>
-                          <td>4,000.00</td>
-                          <td>12,000.00</td>
-                        </tr>
+        <div class="items-f row my-5">
+          <table>
+            <thead>
+              <tr>
+                <th>Cant</th>
+                <th>Articulo</th>
+                <th>Precio</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody style="font-size: 14px;">
+              <tr>
+                <td>1</td>
+                <td>Clases de Cha-Cha-Cha</td>
+                <td>3,000.00</td>
+                <td>3,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <!-- <tr>
+                <th></th>
+                <th></th>
+                <th>Total Factura</th>
+                <th>$15,000.00</th>
+              </tr> -->
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
 
-                        <tr>
-                          <td>3</td>
-                          <td>Clases de Salsa</td>
-                          <td>4,000.00</td>
-                          <td>12,000.00</td>
-                        </tr>
-                      
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th></th>
-                        <th></th>
-                        <th>Total Factura</th>
-                        <th>$15,000.00</th>
-                      </tr>
-                    </tfoot>
-                  </table>
-                  <div class="cond row"></div>
-                </div>
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right">Subtotal</td>
+              </tr>
 
-  </div>
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right">Descuento</td>
+              </tr>
+
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right; background-color: #8be0de">
+                  Total General
+                </td>
+                <td style="background-color: #8be0de">20,00.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="cond row"></div>
+        </div>
+      </div>
+
+      <div class="factura2">
+        <div class="infoEmpresa-f">
+          <img src="assets/logo.jpg" alt="" />
+          <br />
+          Alfombras el limpio
+          <br />
+          NIT: 8000000
+          <br />
+          Dirección: Cra 32 #12-31
+        </div>
+
+        <div class="fecha-f">
+          <table>
+            <tr>
+              <th>Día</th>
+              <th>Mes</th>
+              <th>Año</th>
+            </tr>
+            <tr>
+              <td>‏‏‎‎‎‎29</td>
+              <td>‏‏‎09</td>
+              <td>‏‏‎‎2021‎</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="infoCliente-f">
+          <h6>Cliente:</h6>
+          <h6>Dirección:</h6>
+          <h6>Nit/cc:</h6>
+          <h6>Cel:</h6>
+        </div>
+
+        <div class="items-f row my-5">
+          <table>
+            <thead>
+              <tr>
+                <th>Cant</th>
+                <th>Articulo</th>
+                <th>Precio</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody style="font-size: 14px;">
+              <tr>
+                <td>1</td>
+                <td>Clases de Cha-Cha-Cha</td>
+                <td>3,000.00</td>
+                <td>3,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Clases de Salsa</td>
+                <td>4,000.00</td>
+                <td>12,000.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <!-- <tr>
+                <th></th>
+                <th></th>
+                <th>Total Factura</th>
+                <th>$15,000.00</th>
+              </tr> -->
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right">Subtotal</td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right">Descuento</td>
+              </tr>
+
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="text-align: right; background-color: #8be0de">
+                  Total General
+                </td>
+                <td style="background-color: #8be0de">20,00.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="cond row"></div>
+        </div>
+      </div>
 
     </div>
-
-
-       
-      
-
-</body>
+  </body>
 </html>
-

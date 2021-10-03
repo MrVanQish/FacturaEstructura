@@ -12,9 +12,10 @@ th, td {
 } */
 
 th{
-  background-color: #3C3E46 ;
+  background-color: #5E5F63 ;
   color: white;
 }
+
 
 
 tbody tr:nth-child(odd) {
